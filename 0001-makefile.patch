@@ -1,0 +1,23 @@
+--- shc-3.8.9/Makefile	2012-04-28 07:21:28.000000000 -0300
++++ shc-3.8.9-devel/Makefile	2013-09-12 10:33:06.080731236 -0300
+@@ -23,9 +23,9 @@
+ 
+ #SHELL = /bin/sh
+ 
+-all: shc ask_for_test
++all: shc-3.8.9 ask_for_test
+ 
+-shc: shc.c
++shc-3.8.9: shc-3.8.9.c
+ 	$(CC) $(CFLAGS) $@.c -o $@
+ 
+ ask_for_test:
+@@ -71,7 +71,7 @@
+ 	@echo '***	¿Do you want to install shc?'
+ 	@echo '***	Please try...	make install'
+ 
+-install: shc
++install: shc-3.8.9
+ 	@echo '***	Installing shc and shc.1 on '$(INSTALL_PATH)
+ 	@echo -n '***	¿Do you want to continue? '; read ANS; case "$$ANS" in y|Y|yes|Yes|YES) ;; *) exit 1;; esac;
+ 	install -c -s shc $(INSTALL_PATH)/bin/
