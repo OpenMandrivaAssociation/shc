@@ -1,5 +1,6 @@
 #disabling debuginfo
 %global debug_package %{nil}
+%global _enable_debug_packages %{nil}
 
 %define version 3.8.9
 
