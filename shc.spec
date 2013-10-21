@@ -1,6 +1,8 @@
 #disabling debuginfo
 %global debug_package %{nil}
 %global _enable_debug_packages %{nil}
+%global __strip /bin/true
+%global __eu_strip /bin/true
 
 %define version 3.8.9
 
@@ -34,7 +36,7 @@ make
 
 %install
 # create dirs
-export DONT_STRIP=1
+#export DONT_STRIP=1
 rm -rf %buildroot
 install -d -m 0755 %buildroot
 install -d -m 0755 %buildroot/usr
