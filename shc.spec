@@ -15,7 +15,7 @@ Release:		   %mkrel 1
 Summary:           Generic Shell Compiler
 License:           GPLv2
 Group:             Development/Other
-URL:               http://oem.mandriva.com.br
+URL:               https://oem.mandriva.com.br
 BuildRoot:         %{_tmppath}/%{name}-root
 BuildRequires:     gcc 
 Requires:          bash
