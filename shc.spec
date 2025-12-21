@@ -17,6 +17,7 @@ License:           GPLv2
 Group:             Development/Other
 URL:               https://oem.mandriva.com.br
 BuildRoot:         %{_tmppath}/%{name}-root
+BuildRequires:	make
 BuildRequires:     gcc 
 Requires:          bash
 Provides:          shc = %{version}
